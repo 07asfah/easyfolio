@@ -12655,6 +12655,9 @@ header .close, header .open {
   height: 100%;
   padding: 30px;
 }
+#services .container .service-item h3 a, #services .container .service-item .h3 a {
+  color: gray;
+}
 
 #skills .skill-box {
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
@@ -12839,6 +12842,7 @@ header .close, header .open {
   .bottom .carousel-inner .carousel-item .t-bg .right img {
     width: 100% !important;
     border-radius: 10px;
+    display: none;
   }
 }
 #footer .container .social-links {
@@ -12853,6 +12857,22 @@ header .close, header .open {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.scroll-top {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 1vw;
+  width: 2vw;
+  height: 2vw;
+  padding: 0.5vw;
+  background-color: #e87533;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  font-weight: bold !important;
+  color: white;
 }
 
 #questions {
