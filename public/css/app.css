@@ -12236,7 +12236,6 @@ textarea.form-control-lg {
   font-size: 16px;
   width: 700px;
   line-height: 1.8;
-  text-align: center;
 }
 #about .container {
   padding-top: 2rem;
@@ -12526,15 +12525,14 @@ header .close, header .open {
 }
 
 @media (max-width: 480px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .hero {
+  #hero .container h2, #hero .container .h2 {
     text-align: center;
-    padding: 60px 0;
+  }
+  #hero .container p {
+    padding-inline: 2rem;
+  }
+  #hero .container .cta-buttons .btn {
+    width: 100%;
   }
 }
 #portfolio .section-title h2, #portfolio .section-title .h2 {
