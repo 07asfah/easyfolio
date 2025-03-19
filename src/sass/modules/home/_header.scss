@@ -100,29 +100,27 @@ header{
     }
     .navmenu {
         position: fixed;
-        display: none;
-        inset: 0;
         width: 80%;
         height: 100vh;
         top: 0;
         right: -200%;
-
-        label, .Close{
-            display: block;
-        }
-        .Close{
-            align-self: end;
-        }
-
-        .Open {
-            display: block !important;
-            font-size: 28px;
-            line-height: 0;
-            cursor: pointer;
-            transition: color 0.3s;
-
-        }
+        background-color: white;
+        padding-top: 10vh !important;
     }
+    .open{
+        display: block !important;
+    }
+    #menu:checked ~ .navmenu{
+        right: 0;
+    }
+    .Close{
+        display: block !important;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    
 
     
 

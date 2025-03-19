@@ -31,7 +31,7 @@
                     </svg>
                 </label>
 
-                <ul class="d-flex align-items-center justify-content-between ">
+                <ul class="d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-between ">
                     <li><a href="" class="text-default ">Home</a></li>
                     <li><a href="" class="text-default">About</a></li>
                     <li><a href="" class="text-default">Resume</a></li>
@@ -95,8 +95,8 @@
                             d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
                     </svg>
                 </a>
-                <label class="Open" for="menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                <label class="open" for="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#a2abb4"
                         class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
@@ -576,23 +576,22 @@
 
     <!-- Testimonials -->
     <section id="testimonials" class="pb-10">
-        <div class="container t-top d-flex align-items-center justify-content-center flex-column text-center py-8">
-            <h1>Testimonials</h1>
+        <div class="container section-title d-flex align-items-center justify-content-center flex-column text-center py-8">
+            <h2>Testimonials</h2>
+            <div class="title-shape">
             <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
                 <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor"
                     stroke-width="2"></path>
             </svg>
+        </div>
             <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel
                 illum qui dolorem</p>
         </div>
         <div id="carouselExampleAutoplaying" class="carousel slide bottom" data-bs-ride="carousel">
-            <div class="main-carrousel container">
+            <div class="carousel-inner container">
                 
-                
-
-
-                <div class="item active">
-                    <div class="bg d-flex align-items-start justify-content-center p-5">
+                <div class="carousel-item active">
+                    <div class="t-bg d-flex align-items-start justify-content-center p-5">
                         <div class="left d-flex align-items-start justify-content-start flex-column">
                             <h2>Impedit dolor facilis nulla</h2>
                             <p>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam
@@ -601,25 +600,22 @@
                                 aspernatur voluptas commodi qui qui qui pariatur. Corrupti deleniti itaque quaerat ipsum
                                 deleniti culpa tempora tempore. Et consequatur exercitationem hic aspernatur nobis est
                                 voluptatibus architecto laborum.</p>
-                            <div class="profil d-flex align-items-center justify-content-left">
-                                <img src="./public/images/person/person-f-10.webp" alt="female">
-                                <div class="profil-text">
+                            <div class="profile d-flex align-items-center justify-content-left">
+                                <img src="./public/images/assets/img/person/person-f-10.webp" alt="female">
+                                <div class="profile-text">
                                     <h6>Jena Karlis</h6>
                                     <span>Store Owner</span>
                                 </div>
                             </div>
                         </div>
                         <div class="right">
-                            <img src="./public/images/person/person-f-10.webp" alt="female">
+                            <img src="./public/images/assets/img/person/person-f-10.webp" alt="female">
                         </div>
                     </div>
                 </div>
-                
-                
-
-
-                <div class="item">
-                    <div class="bg d-flex align-items-start justify-content-center p-5">
+                <!-- Perso 2 -->
+                <div class="carousel-item">
+                    <div class="t-bg d-flex align-items-start justify-content-center p-5">
                         <div class="left d-flex align-items-start justify-content-start flex-column">
                             <h2>Sed ut perspiciatis unde omnis</h2>
                             <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit
@@ -628,24 +624,22 @@
                             <p>Beatae magnam dolore quia ipsum. Voluptatem totam et qui dolore dignissimos. Amet quia
                                 sapiente laudantium nihil illo et assumenda sit cupiditate. Nam perspiciatis perferendis
                                 minus consequatur. Enim ut eos quo.</p>
-                            <div class="profil d-flex align-items-center justify-content-left">
-                                <img src="./public/images/person/person-m-7.webp" alt="male">
-                                <div class="profil-text">
+                            <div class="profile d-flex align-items-center justify-content-left">
+                                <img src="./public/images/assets/img/person/person-m-7.webp" alt="male">
+                                <div class="profile-text">
                                     <h6>Saul Goodman</h6>
                                     <span>Client</span>
                                 </div>
                             </div>
                         </div>
                         <div class="right">
-                            <img src="./public/images/person/person-m-7.webp" alt="male">
+                            <img src="./public/images/assets/img/person/person-m-7.webp" alt="male">
                         </div>
                     </div>
                 </div>
-                
-                
-
-                <div class="item">
-                    <div class="bg d-flex align-items-start justify-content-center p-5">
+                <!-- Perso 3 -->
+                <div class="carousel-item">
+                    <div class="t-bg d-flex align-items-start justify-content-center p-5">
                         <div class="left d-flex align-items-start justify-content-start flex-column">
                             <h2>Nemo enim ipsam voluptatem</h2>
                             <p>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum
@@ -657,24 +651,23 @@
                                 iure
                                 dolorum rerum. Repudiandae doloribus ut repellat harum vero aut. Modi aut velit aperiam
                                 aspernatur odit ut vitae.</p>
-                            <div class="profil d-flex align-items-center justify-content-left">
-                                <img src="./public/images/person/person-f-8.webp" alt="male-pic">
-                                <div class="profil-text">
+                            <div class="profile d-flex align-items-center justify-content-left">
+                                <img src="./public/images/assets/img/person/person-f-8.webp" alt="female">
+                                <div class="profile-text">
                                     <h6>Sara Wilsson</h6>
                                     <span>Designer</span>
                                 </div>
                             </div>
                         </div>
                         <div class="right">
-                            <img src="./public/images/person/person-f-8.webp" alt="male-pic">
+                            <img src="./public/images/assets/img/person/person-f-8.webp" alt="female">
                         </div>
                     </div>
                 </div>
-                
-
-                <div class="item">
-                    <div class="bg d-flex align-items-start justify-content-center p-5">
-                        <div class="c-left d-flex align-items-start justify-content-start flex-column">
+                <!-- Perso 4 -->
+                <div class="carousel-item">
+                    <div class="t-bg d-flex align-items-start justify-content-center p-5">
+                        <div class="left d-flex align-items-start justify-content-start flex-column">
                             <h2>Labore nostrum eos impedit</h2>
                             <p>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat
                                 minim
@@ -686,21 +679,21 @@
                                 illum. Nobis quia autem odit ipsam numquam. Doloribus sit sint corporis eius totam fuga.
                                 Hic
                                 nostrum suscipit corrupti nam expedita adipisci aut optio.</p>
-                            <div class="profil d-flex align-items-center justify-content-left">
-                                <img src="./public/images/person/person-m-9.webp" alt="male-pic">
-                                <div class="profil-text">
+                            <div class="profile d-flex align-items-center justify-content-left">
+                                <img src="./public/images/assets/img/person/person-m-9.webp" alt="male">
+                                <div class="profile-text">
                                     <h6>Matt Brandon</h6>
                                     <span>Freelancer</span>
                                 </div>
                             </div>
                         </div>
                         <div class="right">
-                            <img src="./public/images/person/person-m-9.webp" alt="male-pic">
+                            <img src="./public/images/assets/img/person/person-m-9.webp" alt="male">
                         </div>
                     </div>
                 </div>
             </div>
-            
+            <!-- Buttons -->
             <div class="carousel-control align-items-center justify-content-center gap-2 d-flex ">
                 <button class="bg-bg-1 border-0 rounded-circle p-1" type="button"
                     data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -920,7 +913,7 @@
                     <div class="info-item ">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
                             <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
-                            <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+                            <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
                         </svg>
                         <span>info@example.com</span>
                     </div>

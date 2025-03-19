@@ -12367,6 +12367,12 @@ textarea.form-control-lg {
   color: white;
 }
 
+@media (max-width: 480px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -12452,25 +12458,24 @@ header .close, header .open {
   }
   .navmenu {
     position: fixed;
-    display: none;
-    inset: 0;
     width: 80%;
     height: 100vh;
     top: 0;
     right: -200%;
+    background-color: white;
+    padding-top: 10vh !important;
   }
-  .navmenu label, .navmenu .Close {
-    display: block;
-  }
-  .navmenu .Close {
-    align-self: end;
-  }
-  .navmenu .Open {
+  .open {
     display: block !important;
-    font-size: 28px;
-    line-height: 0;
-    cursor: pointer;
-    transition: color 0.3s;
+  }
+  #menu:checked ~ .navmenu {
+    right: 0;
+  }
+  .Close {
+    display: block !important;
+    position: absolute;
+    right: 10px;
+    top: 10px;
   }
 }
 #hero {
@@ -12745,6 +12750,99 @@ header .close, header .open {
   padding-left: 7rem !important;
 }
 
+#testimonials {
+  background-color: #f9f7fa;
+  padding-top: 2rem;
+  padding: 60px 0;
+}
+#testimonials .section-title {
+  gap: 0.5rem;
+}
+#testimonials .section-title h2, #testimonials .section-title .h2 {
+  font-size: 42px;
+  font-weight: 400;
+  color: #80503b;
+}
+#testimonials .section-title .title-shape {
+  width: 200px;
+  height: 20px;
+  margin: 0 auto;
+  color: #e87533;
+  opacity: 0.5;
+}
+#testimonials .section-title p {
+  width: 40rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+}
+#testimonials .bottom {
+  position: relative;
+}
+#testimonials .bottom .carousel-inner .carousel-item .t-bg {
+  background-color: white;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  border-radius: 10px;
+  gap: 1rem;
+}
+#testimonials .bottom .carousel-inner .carousel-item .t-bg .left {
+  gap: 1rem;
+}
+#testimonials .bottom .carousel-inner .carousel-item .t-bg .left h2, #testimonials .bottom .carousel-inner .carousel-item .t-bg .left .h2 {
+  font-family: "Questrial", sans-serif;
+  color: #0f2842;
+  font-weight: 650;
+}
+#testimonials .bottom .carousel-inner .carousel-item .t-bg .left p {
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+}
+#testimonials .bottom .carousel-inner .carousel-item .t-bg .left .profile {
+  gap: 1rem;
+}
+#testimonials .bottom .carousel-inner .carousel-item .t-bg .left .profile img {
+  width: 4rem;
+  border-radius: 40px;
+}
+#testimonials .bottom .carousel-inner .carousel-item .t-bg .left .profile .c-profile-text h6, #testimonials .bottom .carousel-inner .carousel-item .t-bg .left .profile .c-profile-text .h6 {
+  font-weight: 650;
+  font-family: "Questrial", sans-serif;
+}
+#testimonials .bottom .carousel-inner .carousel-item .t-bg .left .profile .c-profile-text span {
+  font-size: 14px;
+  letter-spacing: 0;
+  font-family: "Roboto", sans-serif;
+}
+#testimonials .bottom .carousel-inner .carousel-item .t-bg .right img {
+  width: 25rem;
+  border-radius: 10px;
+}
+#testimonials .bottom .carousel-control {
+  padding-top: 1rem;
+}
+#testimonials .bottom .carousel-control button {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border: 0.5px black solid;
+  transition: 0.3s ease;
+}
+#testimonials .bottom .carousel-control button:hover {
+  background-color: #e87533 !important;
+  color: white !important;
+}
+
+@media (max-width: 480px) {
+  .section-title p {
+    width: 90% !important;
+  }
+  .bottom .carousel-inner .carousel-item .t-bg {
+    flex-direction: column-reverse !important;
+  }
+  .bottom .carousel-inner .carousel-item .t-bg .right img {
+    width: 100% !important;
+    border-radius: 10px;
+  }
+}
 #footer .container .social-links {
   gap: 0.5rem;
   padding-bottom: 1rem;
