@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset=UTF-8>
+    <meta name=viewport content=width=device-width, initial-scale=1.0>
+    <title>easyfolio</title>
+    <link rel=stylesheet href=./public/css/app.css>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Nav-bar-->
+
+    <header class="header d-flex align-items-center sticky-top ">
+        <div
+            class="nav-bar container container-fluid bg-col d-flex align-items-center justify-content-between position-relative">
+            <a href="">
+                <h1 class="site-name">EasyFolio</h1>
+            </a>
+            <input type="checkbox" name="" id="menu">
+            <nav id="nav-menu d-flex align-items-center justify-content-between " class="navmenu">
+                <label class="Close" for="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#currentColor"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                    </svg>
+                </label>
+
+                <ul class="d-flex align-items-center justify-content-between ">
+                    <li><a href="" class="text-default ">Home</a></li>
+                    <li><a href="" class="text-default">About</a></li>
+                    <li><a href="" class="text-default">Resume</a></li>
+                    <li><a href="" class="text-default">Portfolio</a></li>
+                    <li><a href="" class="text-default">Services</a></li>
+                    <li class="dropdown">
+                        <a href=""><span class="text-default">dropdown</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000"
+                                class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                            </svg>
+                        </a>
+                        <ul>
+                            <li><a href="">dropdown 1</a></li>
+                            <li class="dropdown"><a href="">DeepDropdown
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000000"
+                                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                                    </svg>
+                                    <ul class="deepdropdown">
+                                        <li><a href="">dropdown2</a></li>
+                                        <li><a href="">Dropdown3</a></li>
+                                        <li><a href="">Dropdown4</a></li>
+                                    </ul>
+
+                                </a></li>
+                            <li><a href="">dropdown 2</a></li>
+                            <li><a href="">Dropdown 3</a></li>
+                            <li><a href="">Dropdown 4</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li><a href="" class="text-default">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <div class="social-links d-flex align-items-center justify-content-center">
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#6d7073"
+                        class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <path
+                            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                    </svg></a>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#6d7073"
+                        class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                    </svg></a>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#6d7073"
+                        class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                    </svg></a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#a2abb4" class="bi bi-linkedin"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                    </svg>
+                </a>
+                <label class="Open" for="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </label>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!--hero-section-->
+    <section id="hero" class="hero section ">
+
+        <div class="container d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="100">
+
+            <!-- <div class="row align-items-center content"> -->
+            <div class="col-lg-6 " >
+                <h2 class="text-color ">Crafting Digital Experiences with Passion</h2>
+                <p class="lead">Transforming ideas into elegant solutions through creative design and innovative
+                    development</p>
+                <div class="cta-buttons d-flex align-items-center " data-aos="fade-up" data-aos-delay="300">
+                    <a href="#portfolio" class="btn btn-primary bg-button text-light">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Let's Connect</a>
+                </div>
+                <div class="hero-stats d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-item d-flex flex-column  ">
+                        <span class="stat-number text-color">5+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item  d-flex flex-column ">
+                        <span class="stat-number text-color">100+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item  d-flex flex-column ">
+                        <span class="stat-number text-color">50+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-img">
+                    <img src="./public/images/assets/img/profile/profile-1.webp" alt="Portfolio Hero Image"
+                        class="img-fluid" data-aos="zoom-out" data-aos-delay="300">
+                    <div class="shape-1"></div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!--About-->
+    <section id="about" class="about section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title d-flex flex-column align-items-center justify-content-center">
+            <h2>About</h2>
+            <div class="title-shape">
+                <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor"
+                        stroke-width="2"></path>
+                </svg>
+            </div>
+            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel
+                illum qui dolorem</p>
+        </div>
+
+        <div class="container">
+
+            <div class="row align-items-center">
+                <div class="col-lg-6 position-relative">
+                    <div class="about-img">
+                        <img src="./public/images/assets/img/profile/profile-square-2.webp" alt="Profile Image"
+                            class="img-fluid rounded-4">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="about-content ps-5">
+                        <span class="sub-title">About Me</span>
+
+                        <h2 class="text-color pt-1 pb-2">UI/UX Designer &amp; Web Developer</h2>
+
+                        <p class="lead ">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                            quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+                        <p class="pb-4 fw-semibold">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>
+
+                        <div class="personal-info">
+                            <div class="row g-4">
+                                <div class="col-6">
+                                    <div class="info-item d-flex flex-column ">
+                                        <span class="label">Name</span>
+                                        <span class="value">Eliot Johnson</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="info-item d-flex flex-column">
+                                        <span class="label">Phone</span>
+                                        <span class="value">+123 456 7890</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="info-item d-flex flex-column">
+                                        <span class="label">Age</span>
+                                        <span class="value">26 Years</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="info-item d-flex flex-column">
+                                        <span class="label">Email</span>
+                                        <span class="value">email@example.com</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="info-item d-flex flex-column">
+                                        <span class="label">Occupation</span>
+                                        <span class="value">Lorem Engineer</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="info-item d-flex flex-column">
+                                        <span class="label">Nationality</span>
+                                        <span class="value">Ipsum</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="signature pt-4 d-flex align-items-center justify-content-center">
+                            <div class="signature-image">
+                                <img src="./public/images/assets/img/misc/signature-1.webp" alt="" class="img-fluid">
+                            </div>
+                            <div class="signature-info ">
+                                <h4 class="fs-5 fw-normal">Eliot Johnson</h4>
+                                <p class="fs-7">Adipiscing Elit, Lorem Ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--skills-->
+    <section id="skills" class="pt-5">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-box">
+                        <h3 class="text-color">HTML</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                        <span class="text-end d-block">90%</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                aria-valuemax="100" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-box">
+                        <h3 class="text-color">CSS</h3>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
+                        <span class="text-end d-block">90%</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                                aria-valuemax="100" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-box">
+                        <h3 class="text-color">JavaScript</h3>
+                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor.</p>
+                        <span class="text-end d-block">80%</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                aria-valuemax="100" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="skill-box">
+                        <h3 class="text-color">Photoshop</h3>
+                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate.</p>
+                        <span class="text-end d-block">55%</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                                aria-valuemax="100" style="width: 55%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--resume-->
+    <section id="resume" class="resume section pt-5">
+
+        <div class="container section-title d-flex flex-column align-items-center justify-content-center"
+            data-aos="fade-up">
+            <h2>Resume</h2>
+            <div class="title-shape">
+                <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor"
+                        stroke-width="2"></path>
+                </svg>
+            </div>
+            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel
+                illum qui dolorem</p>
+        </div>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="resume-wrapper">
+                        <div class="resume-block">
+                            <h2>Work Experience</h2>
+                            <p class="lead">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit
+                                amet adipiscing sem neque sed ipsum.</p>
+
+                            <div class="timeline d-flex flex-column align-items-lg-start">
+                                <div class="timeline-content d-flex " >
+                                    <div class="timeline-left">
+                                        <h4 class="company">Etiam Industries</h4>
+                                        <span class="period text-button">Jun, 2023 - Current</span>
+                                    </div>
+                                    <div class="timeline-dot text-button"></div>
+                                    <div class="timeline-right">
+                                        <h3 class="position">Project Lead</h3>
+                                        <p class="description">Quia nobis sequi est occaecati aut. Repudiandae et iusto
+                                            quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates
+                                            asperiores voluptatem Earum molestiae consequatur neque etlon sader mart
+                                            dila</p>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-content d-flex">
+                                    <div class="timeline-left">
+                                        <h4 class="company">Nullam Corp</h4>
+                                        <span class="period text-button">2019 - 2023</span>
+                                    </div>
+                                    <div class="timeline-dot text-button"></div>
+                                    <div class="timeline-right">
+                                        <h3 class="position">Senior graphic design specialist</h3>
+                                        <p class="description">
+                                            Curabitur ullamcorper ultricies nisi nam eget dui etiam rhoncus maecenas
+                                            tempus.
+                                        </p>
+                                        <ul>
+                                            <li>Lead in the design, development, and implementation of the graphic,
+                                                layout, and production communication materials</li>
+                                            <li>Delegate tasks to the 7 members of the design team and provide counsel
+                                                on all aspects of the project. </li>
+                                            <li>Supervise the assessment of all graphic materials in order to ensure
+                                                quality and accuracy of the design</li>
+                                            <li>Oversee the efficient use of production project budgets ranging from
+                                                $2,000 - $25,000</li>
+                                        </ul>
+                                        <p></p>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-content d-flex" >
+                                    <div class="timeline-left">
+                                        <h4 class="company">Stepping Stone Ltd.</h4>
+                                        <span class="period text-button">2015-2019</span>
+                                    </div>
+                                    <div class="timeline-dot text-button"></div>
+                                    <div class="timeline-right">
+                                        <h3 class="position">Graphic design specialist</h3>
+                                        <p class="description">Curabitur ullamcorper ultricies nisi nam eget dui etiam
+                                            rhoncus maecenas tempus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resume-block" >
+                            <h2>My Education</h2>
+                            <p class="lead">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit
+                                amet adipiscing.</p>
+
+                            <div class="timeline">
+                                <div class="timeline-content d-flex" >
+                                    <div class="timeline-left">
+                                        <h4 class="company">Vestibulum University</h4>
+                                        <span class="period text-button">2017-2019</span>
+                                    </div>
+                                    <div class="timeline-dot text-button"></div>
+                                    <div class="timeline-right">
+                                        <h3 class="position">Diploma in Consequat</h3>
+                                        <p class="description">Curabitur ullamcorper ultricies nisi nam eget dui etiam
+                                            rhoncus maecenas tempus.</p>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-content d-flex" >
+                                    <div class="timeline-left">
+                                        <h4 class="company">Nullam Corp</h4>
+                                        <span class="period text-button">2019 - 2023</span>
+                                    </div>
+                                    <div class="timeline-dot text-button"></div>
+                                    <div class="timeline-right">
+                                        <h3 class="position">Master of Fine Arts &amp; Graphic Design</h3>
+                                        <p class="description">Curabitur ullamcorper ultricies nisi nam eget dui etiam
+                                            rhoncus maecenas tempus.</p>
+                                    </div>
+                                </div>
+
+                                <div class="timeline-content d-flex" data-aos="fade-up" data-aos-delay="400">
+                                    <div class="timeline-left">
+                                        <h4 class="company">Vestibulum University</h4>
+                                        <span class="period text-button">2015-2019</span>
+                                    </div>
+                                    <div class="timeline-dot text-button"></div>
+                                    <div class="timeline-right">
+                                        <h3 class="position">Bachelor of Fine Arts &amp; Graphic Design</h3>
+                                        <p class="description">Curabitur ullamcorper ultricies nisi nam eget dui etiam
+                                            rhoncus maecenas tempus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--portfolio-->
+
+    <section id="portfolio" class="portfolio section">
+
+        <!-- Section Title -->
+        <div class="container section-title d-flex flex-column align-items-center justify-content-center">
+            <h2>Portfolio</h2>
+            <div class="title-shape">
+                <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor"
+                        stroke-width="2"></path>
+                </svg>
+            </div>
+            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel
+                illum qui dolorem</p>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+            <input type="radio" id="tab1" name="tab" checked>
+            <label for="tab1">All work</label>
+
+            <input type="radio" id="tab2" name="tabGroup1">
+            <label for="tab2">Web design</label>
+
+            <input type="radio" id="tab3" name="tabGroup2">
+            <label for="tab3">Graphics</label>
+
+            <input type="radio" id="tab4" name="tabGroup3">
+            <label for="tab4">Motion</label>
+
+            <input type="radio" id="tab5" name="tabGroup4">
+            <label for="tab4">Branding</label>
+            <div>
+
+                <div class="portfolio-filters-container d-flex flex-row align-items-center justify-content-center ">
+
+                    <ul class="portfolio-filters d-flex align-items-center justify-content-center">
+                        <li class="filter-active">All Work</li>
+                        <li >Web Design</li>
+                        <li>Graphics</li>
+                        <li >Motion</li>
+                        <li >Branding</li>
+                    </ul>
+                </div>
+
+                <div class="row g-4 container">
+
+                    <div class="col-lg-6 col-md-6 portfolio-item  filter-web">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="./public/images/assets/img/portfolio/portfolio-1.webp" class="img-fluid"
+                                    alt="">
+                                
+                            </div>
+                            <div class="portfolio-content">
+                                <span class="category">Web Design</span>
+                                <h3>Modern Dashboard Interface</h3>
+                                <p>Maecenas faucibus mollis interdum sed posuere consectetur est at lobortis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 portfolio-item  filter-graphics">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="./public/images/assets/img/portfolio/portfolio-10.webp" class="img-fluid" alt="">
+                            </div>
+                            <div class="portfolio-content">
+                                <span class="category">Graphics</span>
+                                <h3>Creative Brand Identity</h3>
+                                <p>Vestibulum id ligula porta felis euismod semper at vulputate.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 portfolio-item  filter-motion">
+                        <div class="portfolio-card">
+                            <div class="portfolio-img">
+                                <img src="./public/images/assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="">
+                            </div>
+                            <div class="portfolio-content">
+                                <span class="category">Motion</span>
+                                <h3>Product Animation Reel</h3>
+                                <p>Donec ullamcorper nulla non metus auctor fringilla dapibus.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 portfolio-item  filter-brand">
+                        <div class="portfolio-card">
+                            <div class="portfolio-img">
+                                <img src="./public/images/assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="">
+                            </div>
+                            <div class="portfolio-content">
+                                <span class="category">Branding</span>
+                                <h3>Luxury Brand Package</h3>
+                                <p>Aenean lacinia bibendum nulla sed consectetur elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 portfolio-item  filter-web">
+                        <div class="portfolio-card">
+                            <div class="portfolio-img">
+                                <img src="./public/images/assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="">
+                            </div>
+                            <div class="portfolio-content">
+                                <span class="category">Web Design</span>
+                                <h3>E-commerce Platform</h3>
+                                <p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 portfolio-item  filter-graphics">
+                        <div class="portfolio-card">
+                            <div class="portfolio-img">
+                                <img src="./public/images/assets/img/portfolio/portfolio-11.webp" class="img-fluid" alt="">
+                            </div>
+                            <div class="portfolio-content">
+                                <span class="category">Graphics</span>
+                                <h3>Digital Art Collection</h3>
+                                <p>Cras mattis consectetur purus sit amet fermentum.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Testimonials -->
+
+
+
+
+
+    <!--Services-->
+    <section id="services">
+    <div class="container section-title d-flex flex-column align-items-center justify-content-center" data-aos="fade-up">
+        <h2>Services</h2>
+        <div class="title-shape">
+        <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+        </svg>
+        </div>
+        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem</p>
+    </div>
+
+    <div class="container" >
+
+        <div class="row align-items-center">
+        <div class="col-lg-4 ">
+            <h2 class="fw-bold servies-title text-color">Consectetur adipiscing elit sed do eiusmod tempor</h2>
+            <p class="">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh volutpat velit class aptent taciti sociosqu ad litora.</p>
+            <a href="#" class="btn btn-outline-primary text-button">See all services</a>
+        </div>
+        <div class="col-lg-8">
+            <div class="row g-4">
+
+            <div class="col-md-6" >
+                <div class="service-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#e87533" class="bi bi-activity" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/>
+                    </svg>
+                <h3><a href="service-details.html">Eget nulla facilisi etiam</a></h3>
+                <p>Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6" >
+                <div class="service-item">
+                <i class="bi bi-easel icon"></i>
+                <h3><a href="service-details.html">Duis aute irure dolor</a></h3>
+                <p>Auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6" >
+                <div class="service-item">
+                <i class="bi bi-broadcast icon"></i>
+                <h3><a href="service-details.html">Excepteur sint occaecat</a></h3>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6" >
+                <div class="service-item">
+                <i class="bi bi-bounding-box-circles icon"></i>
+                <h3><a href="service-details.html">Tempor incididunt ut labore</a></h3>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        </div>
+
+</div>
+
+</section>
+
+    <!--FAQ-->
+    <div id="FAQ" class="d-flex flex-column align-items-center justify-content-center pt-10  container ">
+        <div class="d-flex flex-column align-items-center justify-content-center pb-3">
+            <h1 class="text-sec-title text-center">Frequently Asked Questions</h1>
+            <svg class="text-btn-back fw-light w-25 " viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor"
+                    stroke-width="2"></path>
+            </svg>
+        </div>
+        <p class="hero p_about fs-5 fw-700 pb-10">Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+            esse
+            quam nihil molestiae
+            consequatur vel illum qui dolorem</p>
+
+        <div class="faq container text-lg-center py-4 ">
+            <div class=" accordion d-flex flex-column gap-3" id="accordionPanelsStayOpenExample">
+
+                <div class="accordion-item ">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button py-4 py-4 accord" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne ">
+                            Non consectetur a erat nam at lectus urna duis?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <p class="text-start">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                                volutpat
+                                lacus laoreet non
+                                curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
+                                purus
+                                non.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button py-4 collapsed accord" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            Feugiat scelerisque varius morbi enim nunc faucibus?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p class="text-start">Dolor sit amet consectetur adipiscing elit pellentesque habitant
+                                morbi. Id
+                                interdum velit
+                                laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec
+                                pretium.
+                                Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis
+                                massa
+                                tincidunt dui.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button py-4 collapsed accord" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            Dolor sit amet consectetur adipiscing elit pellentesque?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p class="text-start">Eleifend mi in nulla posuere sollicitudin aliquam ultrices
+                                sagittis
+                                orci.
+                                Faucibus pulvinar
+                                elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
+                                tellus
+                                pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna
+                                molestie at
+                                elementum eu facilisis sed odio morbi quis</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button py-4 collapsed accord" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapse4" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapse4">
+                            Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p class="text-start">Dolor sit amet consectetur adipiscing elit pellentesque habitant
+                                morbi. Id
+                                interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque
+                                eleifend
+                                donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
+                                cursus
+                                turpis massa tincidunt dui.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button py-4 collapsed accord" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapse5" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapse5">
+                            Tempus quam pellentesque nec nam aliquam sem et tortor?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p class="text-start">Molestie a iaculis at erat pellentesque adipiscing commodo.
+                                Dignissim
+                                suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit
+                                amet
+                                nisl
+                                suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button py-4 collapsed accord" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapse6" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapse6">
+                            Perspiciatis quod quo quos nulla quo illum ullam? </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapse6" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p class="text-start">Enim ea facilis quaerat voluptas quidem et dolorem. Quis et
+                                consequatur
+                                non sed in suscipit sequi. Distinctio ipsam dolore et. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+    </div>
+
+
+
+    <!--Contact-->
+        <section id="contact" class="contact section ">
+
+            <div class="container" >
+    
+            <div class="contact">
+                <div class="">
+                <div class="content">
+                    <div class="title ">Contact</div>
+                    <h2>Nemo enim ipsam voluptatem quia voluptas aspernatur</h2>
+                    <p >Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+    
+                    <div class="contact-info ">
+                    <div class="info-item ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                            <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                            <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+                        </svg>
+                        <span>info@example.com</span>
+                    </div>
+    
+                    <div class="info-item ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                        </svg>
+                        <span>+1 5589 55488 558</span>
+                    </div>
+    
+                    <div class="info-item ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>
+                        <span>A108 Adam Street, New York, NY 535022</span>
+                    </div>
+    
+                    <a href="#" class="map-link ">
+                        Open Map
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                        </svg>
+                    </a>
+                    </div>
+                </div>
+                </div>
+    
+                <div class="">
+                <div class="contact-form card" >
+                    <div class="card-body">
+    
+                    <form class="email-form">
+                        <div class="forms">
+                            <input type="text" name="name"  placeholder="Your Name">
+                        </div>
+    
+                        <div class="forms">
+                            <input type="email"  name="email" placeholder="Your Email" >
+                        </div>
+    
+                        <div class="forms">
+                            <input type="text"  name="subject" placeholder="Subject" >
+                        </div>
+    
+                        <div class="forms">
+                            <textarea  name="message" rows="6" placeholder="Message" ></textarea>
+                        </div>
+    
+                        <div class=" text-center">
+                            <button type="submit" class="btn btn-submit ">Submit Message</button>
+                        </div>
+    
+                        </div>
+                    </form>
+    
+                    </div>
+                </div>
+                </div>
+    
+            </div>
+    
+            </div>
+    
+        </section>
+
+
+        <!--footer-->
+        <footer id="footer" class="footer">
+
+            <div class="container">
+                <div class="copyright text-center ">
+                    <p>© <span>Copyright</span> <strong class="px-1 sitename">EasyFolio</strong> <span>All Rights Reserved</span></p>
+                </div>
+                <div class="social-links d-flex justify-content-center">
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+                <div class="Credits">
+                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+                </div>
+            
+            </footer>
+            
+            <!-- Scroll Top -->
+            <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        
+
+
+            <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+
+</body>
+
+</html>

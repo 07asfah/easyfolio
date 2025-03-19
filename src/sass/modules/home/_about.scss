@@ -1,0 +1,79 @@
+#about{
+    background-color: #f9f7fa;
+    padding-top: 2rem;
+    padding: 60px 0;
+    .section-title{
+        padding: 1rem;
+        h2{
+            font-size: 42px;
+            font-weight: 400;
+            color: #80503b;
+        }
+        .title-shape{
+            width: 200px;
+            height: 20px;
+            margin: 0 auto;
+            color: #e87533;
+            opacity: 0.5;        
+        }
+        p{
+            padding-top: 0.5rem;
+            font-size: 16px;
+            width: 700px;
+            line-height: 1.8;
+            text-align: center;
+            
+        }
+    }
+
+    .container{
+        padding-top: 2rem;
+    }
+    .about-img{
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    
+    .sub-title{
+        color: #e87533;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    h2{
+        font-size: 2rem;
+        font-weight: 700;
+        font-family: "Questrial", sans-serif;
+    }
+
+    .personal-info{
+        padding: 2rem;
+        background-color: white;
+        border-radius: 1rem;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+        .info-item{
+            gap: 0.5rem;
+        }
+        .label{
+            font-size: 1rem;
+            color: #6d708a;
+        }
+        .value{
+            font-weight: 600;
+        }
+    }
+
+    .signature{
+        gap: 1.5rem;
+        width: 400px;
+    }
+
+    .signature-info{
+        p{
+           width: 200px;
+           color: #6d708a;
+        }
+    }
+
+
+}

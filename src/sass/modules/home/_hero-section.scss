@@ -1,0 +1,70 @@
+#hero{
+    padding: 8rem 0;
+    position: relative;
+    h2{
+        font-size: 3.5rem;
+        font-weight: 600;
+        font-family: "Questrial", sans-serif;
+        padding-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+    .lead{
+        font-weight: 300;
+        font-size: 1.25rem;
+        padding-bottom: 2rem;
+    }
+
+    .cta-buttons{
+        color: #e87533;
+        gap: 2rem;
+        padding-bottom: 10px;
+        .btn{
+            border: 0.2px solid #eb9461;
+            border-radius: 15px;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 50px;
+            
+        }
+
+        .btn-outline:hover{
+            background-color: #e87533;
+            color: white;
+        }
+        
+    }
+
+
+    .hero-stats{
+        padding-top: 2rem;
+        gap: 3rem;
+        .stat-number{
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .stat-label{
+            font-size: 0.9rem;
+            padding-top: 0.8rem;
+        }
+
+    }
+}
+
+
+@media (max-width:480px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;  
+    }
+
+    .hero{
+        text-align: center ;
+        padding: 60px 0 ;
+    }
+    
+}

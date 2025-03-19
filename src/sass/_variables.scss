@@ -1,0 +1,20 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$headding: #3e5055;
+$btn: #e87533;
+$default: #000000;
+$background-color: #c5c2c6;
+$title: #0f2842;
+$custom-colors: (
+"headding": $headding,
+"btn": $btn,
+"default": $default,
+);
+
+$font-family: "Questrial", sans-serif;
+
+
+$colors: ("bg-col": $background-color, "default": $default, "color": $title, "button":$btn );
+
+$theme-colors: map-merge($colors , $theme-colors);

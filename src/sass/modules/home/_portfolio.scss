@@ -1,0 +1,88 @@
+#portfolio{
+    .section-title{
+        h2{
+            font-size: 42px;
+            font-weight: 400;
+            color: #80503b;
+        }
+        .title-shape{
+            width: 200px;
+            height: 20px;
+            margin: 0 auto;
+            color: #e87533;
+            opacity: 0.5;        
+        }
+        p{
+            padding-top: 0.5rem;
+            font-size: 16px;
+            width: 700px;
+            line-height: 1.8;
+            text-align: center;
+            
+        }
+    }
+
+    .container{
+        padding: 1rem;
+        .portfolio-filters{
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            list-style: none;
+            padding-bottom: 2rem;
+            .filter-active{
+                background-color: #e87533;
+                border-radius: 30px;
+                padding: 8px 10px;
+                color: white;
+                font-family: "Roboto", sans-serif;
+                font-size: 15px;
+                font-weight: 500;
+            }
+            li{
+                padding: 8px 10px;
+                font-family: "Roboto", sans-serif;
+                font-size: 15px;
+                font-weight: 500;
+                color: #0f2842;
+
+            }
+            li:hover{
+                background-color: #ead2c4;
+                border-radius: 30px;
+                cursor: pointer;
+                color: #e87533;
+            }
+        }
+
+
+        .portfolio-card,img {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+            .portfolio-content{
+                padding: 20px;
+                .category{
+                    font-size: 14px;
+                    color: #e87533;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    font-weight: 500;
+                    
+                }
+
+                h3{
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #0f2842;
+                }
+
+            }
+        }
+
+    }
+
+
+    
+}

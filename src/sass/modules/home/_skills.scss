@@ -1,0 +1,26 @@
+#skills{
+    .skill-box{
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 2rem;
+    }
+    h3{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    p{
+        font-size: 0.9rem;
+        opacity: 0.6;
+    }
+    .progress{
+        background-color: #fcece1 ;
+        height: 8px;
+        .progress-bar{
+            background-color: #e87533 !important;
+            height: 100%;
+            
+        }
+    }
+
+
+}
