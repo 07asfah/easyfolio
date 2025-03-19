@@ -12371,6 +12371,9 @@ textarea.form-control-lg {
     display: flex;
     flex-direction: column;
   }
+  .contact .contact-form .card-body {
+    width: 100%;
+  }
 }
 * {
   padding: 0;
@@ -12659,6 +12662,11 @@ header .close, header .open {
   color: gray;
 }
 
+@media (max-width: 480px) {
+  #services .container {
+    padding: 1.5rem;
+  }
+}
 #skills .skill-box {
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -12751,6 +12759,26 @@ header .close, header .open {
   padding-left: 7rem !important;
 }
 
+@media (max-width: 480px) {
+  .container .timeline-content {
+    left: 10px;
+  }
+  .container .timeline::before {
+    display: none;
+  }
+  .container .timeline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #eac4ae;
+  }
+  .container .resume-block .timeline-dot {
+    left: 0px;
+  }
+}
 #testimonials {
   background-color: #f9f7fa;
   padding-top: 2rem;
@@ -12875,6 +12903,13 @@ header .close, header .open {
   color: white;
 }
 
+@media (max-width: 480px) {
+  .scroll-top {
+    width: 10vw;
+    height: 5vh;
+    right: 10px;
+  }
+}
 #questions {
   background-color: #f9f7fa;
   padding-top: 2rem;

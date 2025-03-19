@@ -92,3 +92,31 @@
         }
     }
 }
+
+
+@media (max-width: 480px){
+    .container{
+
+        .timeline-content{
+            left: 10px;
+        }
+        .timeline::before{
+            display: none;
+        }
+        .timeline::after{
+            content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 2px;
+                    background-color: #eac4ae;
+        }
+
+        .resume-block{
+            .timeline-dot{
+                left: 0px;
+            }
+        }
+    }
+}

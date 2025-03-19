@@ -96,6 +96,11 @@
     .contact{
         display: flex;
         flex-direction: column;
+        .contact-form{
+            .card-body{
+                width: 100%;
+            }
+        }
     }
 }
 
