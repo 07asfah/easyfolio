@@ -12745,4 +12745,75 @@ header .close, header .open {
   padding-left: 7rem !important;
 }
 
+#footer .container .social-links {
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+}
+#footer .container .social-links a {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#questions {
+  background-color: #f9f7fa;
+  padding-top: 2rem;
+  padding: 60px 0;
+}
+#questions .section-title {
+  padding: 1rem;
+}
+#questions .section-title h2, #questions .section-title .h2 {
+  font-size: 42px;
+  font-weight: 400;
+  color: #80503b;
+}
+#questions .section-title .title-shape {
+  width: 200px;
+  height: 20px;
+  margin: 0 auto;
+  color: #e87533;
+  opacity: 0.5;
+}
+#questions .section-title p {
+  padding-top: 0.5rem;
+  font-size: 16px;
+  width: 700px;
+  line-height: 1.8;
+  text-align: center;
+}
+#questions .faq-info {
+  gap: 1rem;
+}
+#questions .faq-info div h3 .faq-summary, #questions .faq-info div .h3 .faq-summary {
+  background-color: white;
+  border: 0.5px black solid;
+  border-radius: 5px !important;
+  font-weight: 600;
+  font-family: "Questrial", sans-serif;
+  color: #0f2842;
+  box-shadow: none;
+}
+#questions .faq-info div h3 .faq-summary:hover, #questions .faq-info div .h3 .faq-summary:hover {
+  color: #e87533;
+}
+#questions .faq-info div h3 .faq-summary:focus, #questions .faq-info div .h3 .faq-summary:focus {
+  background-color: #fefbf8;
+  color: #e87533;
+}
+#questions .faq-info div div .faq-details {
+  background-color: #fefbf8;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 480px) {
+  .section-title p {
+    width: 90% !important;
+  }
+}
+
 /*# sourceMappingURL=app.css.map */
